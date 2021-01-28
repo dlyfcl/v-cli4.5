@@ -1,4 +1,4 @@
-# hk
+# 基于v-cli4.5的脚手架框架
 
 ## Project setup
 ```
@@ -15,5 +15,4 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 对其进行进一步的封装，嵌入自己的封装函数，加入关于脚手架的一些配置。
