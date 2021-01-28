@@ -1,0 +1,1 @@
+type User1 = { name: string, age: number }
