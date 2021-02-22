@@ -117,3 +117,25 @@ view Model通过双向数据绑定把view层和model层连接了起来，而view
 # 五、什么是生命周期
 实例从创建到销毁的过程就是生命周期
 
+# 六、Vue实现数据双向绑定的原理
+Object.defineProperty()
+样例如下：
+<div>
+	<input id="id" type="text" />
+	<p id="show"></p>
+</div>
+<script>
+let obj = {};
+Object.defineProperty({
+	get: function() {
+		return obj;
+	},
+	set: function(newVal) {
+		document.getElementById("id").value = newVal;
+		document.getElementById("show").innerHtml = newVal;
+	}
+})
+document.addEventListener('keyUp', function(e) {
+	obj.txt = e.target.value;
+})
+</script>
